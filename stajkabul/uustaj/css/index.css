@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.red {
+    background-color: red;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.aqua {
+    background-color: aqua;
+}
+
+.modal {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    -webkit-box-shadow: 10px 10px 25px 0px rgba(138, 138, 138, 1);
+    -moz-box-shadow: 10px 10px 25px 0px rgba(138, 138, 138, 1);
+    box-shadow: 10px 10px 25px 0px rgba(138, 138, 138, 1);
+    border-radius: 5px;
+
+
+}
+
+.modal > h2 {
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+
+.modal hr {
+    border-top: 1px;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin: 15px 0 15px 0;
+}
+
+.modal-text {
+    line-height: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.98em
+}
+
+.modal-text-Info {
+    line-height: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.98em
+}
+
+ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+
+ol li {
+    counter-increment: my-awesome-counter;
+    margin: 7px 0 7px 0;
+}
+
+ol li::before {
+    content: counter(my-awesome-counter) ". ";
+    font-weight: bold;
+}
+
+.btnNext button {
+    width: 250px;
+    height: 35px;
+    outline: none;
+    border: 0;
+    background-color: #3A5683;
+    color: #fff;
+}
+
+.btnNext {
+    text-align: right;
+}
+
+.btnPrev button {
+    width: 250px;
+    height: 35px;
+    outline: none;
+    border: 0;
+    background-color: #3A5683;
+    color: #fff;
+}
+
+.btnPrev {
+    text-align: left;
+}
+
+.tabContent {
+    display: none;
+}
+
+.tabContent .active {
+    display: block;
+    display: show;
+}
+
+/*TASARIM KISMI İNFO İÇİN */
+form > h4 {
+    text-align: center;
+}
+#department{
+    color: black;
+    margin-top: 4px;
+    height: 30px;
+}
+form p{
+    font-weight: 12px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/*form input{
+    width: 220px;
+    height: 20px;
+}*/
+.inputText{
+    width: 220px;
+    height: 20px;
+}
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="col-3 ">&nbsp;</div>
+
+    <div class="col-6 modal ">
+        <h2 class="col-12 "> Öğrenci Başvuru Dilekçesi</h2>
+        <hr>
+        <div class=" col-12 modal-text   active " id="modal-text-Info-1">
+            <form action="">
+                <h4>T.C. <br>
+                    BURSA ULUDAĞ ÜNİVERSİTESİ <br>
+                    TEKNİK BİLİMLER MESLEK YÜKSEKOKULU <br>
+                </h4>
+
+                <br><br>
+                <div class="col-6">
+                    <p>Öğrencinin Adı:</p>
+                    <input class="inputText" type="text" maxlength="25" required placeholder="Lütfen Adınızı Girin" id="name">
+                </div>
+                <div class="col-6">
+                    <p>Öğrencinin Soyadı:</p>
+                    <input class="inputText" type="text" maxlength="25" placeholder="Lütfen Soyadınızı Girin"  required id="surname">
+                </div>
+                <div class="col-6">
+                    <p>Öğrenci Numarası:</p>
+                    <input class="inputText" type="text" placeholder="Lütfen Öğrenci Numaranızı Girin" required id="studentNumber">
+                </div>
+                <div class="col-6">
+                    <p>Öğrenci Telefon Numarası:</p>
+                    <input class="inputText" type="tel" maxlength="12" placeholder="(538)3977808" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required id="userPhone">
+                </div>
+                <br>
+                <div class="col-6">
+                    <p style="margin-top: 12px;">Lütfen kayıtlı olduğunuz bölümü seçiniz:</p>
+                    <select id="department " class="inputText">
+
+                        <option value="">Bilgisayar Teknolojileri Bölümü</option>
+                        <option value="">Makine ve Metal Teknolojisi Bölümü</option>
+                        <option value="">Tasarım Bölümü</option>
+                        <option value="">Elektrik ve Enerji Bölümü</option>
+                        <option value="">Motorlu Araçlar ve Ulaştırma Teknolojileri Bölümü</option>
+                        <option value="">Tekstil, Giyim, Ayakkabı ve Deri</option>
+                        <option value="">Elektronik ve Otomasyon Bölümü</option>
+                        <option value="">Mülkiyet ve Koruma Bölümü</option>
+                        <option value="">Gıda İşleme Bölümü</option>
+                        <option value="">Park ve Bahçe Bitkileri Bölümü</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <p>Staj Başlangıç Tarihi:</p>
+                    <input type="date" class="inputText" required id="internshipStartTime"><br><br>
+                </div>
+                <div class="col-12">
+                    <p>SGK Durumu:</p>
+                    <div class="col-12 sgkRadioBtn">
+                        <input type="radio" class="sgkRadioBtn"  name="sgk">Annemin üzerine sağlık sigortam vardır.<br>
+                        <input type="radio" class="sgkRadioBtn"  name="sgk">Babamın üzerine sağlık sigortam vardır.<br>
+                        <input type="radio" class="sgkRadioBtn" name="sgk">Kendi üzerimden sağlık sigortam vardır. <br>
+                        <input type="radio"class="sgkRadioBtn"  name="sgk">Sağlık sigortam yoktur. <br><br>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p>Staj Yapılacak Yerin Adresi:</p>
+                    <textarea id="adress" required rows="5" cols="95"></textarea>
+                </div>
+                <div class="col-12">
+                    <p style="margin-top: 20px">NOT: Öğrenci velisinin sigortasına tabii ise “ sosyal güvencem vardır” seçeneğini işaretleyeceklerdir. Öğrenciler tamamlanmış ve imzalanmış staj evraklarını staj başlangıç tarihinden <b>en az 20 gün önce nüfus cüzdanı fotokopisi ve Form 3(A) ile birlikte</b> teslim etmeleri gerekmektedir.</p>
+                </div>
+
+             <div class="col-12  btnNext">
+                        <button onclick="next()">İLERİ</button>
+                    </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="col-3 ">&nbsp;</div>
+</body>
+
+</html>

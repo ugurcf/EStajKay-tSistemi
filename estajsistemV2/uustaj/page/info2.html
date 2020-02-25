@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Bilgilendirme Sayfası 2</title>
+</head>
+
+<body>
+    <div class="col-3 ">&nbsp;</div>
+
+    <div class="col-6 modal ">
+        <h2 class="col-12 "> Öğrenci Başvuru Dilekçesi</h2>
+        <hr>
+        <div class=" col-12 modal-text   active " id="modal-text-Info-1">
+            <form action="">
+                <h4>T.C. <br>
+                    BURSA ULUDAĞ ÜNİVERSİTESİ <br>
+                    TEKNİK BİLİMLER MESLEK YÜKSEKOKULU <br>
+                </h4>
+
+                <br><br>
+                <div class="col-12">
+                    <p>Sayı: B.30.2.ULU.0.MC.00.00 / 504 - <br><br>
+                        Konu: Staj. <br><br><br>
+                    </p>
+                    <p>SAYIN YÖNETİCİ<br><br>
+                        Yüksekokulumuz ülkemiz ihtiyaçlarına uygun nitelikli insan gücü yetiştiren iki yıllık Önlisans düzeyinde Eğitim-Öğretim yapan bir Yükseköğretim kurumudur. <br>
+                        Meslek Yüksekokulu Öğrencilerinin İşyerlerindeki Eğitim, Uygulama ve Stajlarına İlişkin Esas ve Usuller Hakkında Yönetmelik gereğince bir öğrencinin mezun olabilmesi için öğrenim süresi boyunca en az 30 iş günü uygulamaya dayalı öğrenim (staj) yapması gerekmektedir. <br>
+                        Aşağıda kimliği yazılı Yüksekokulumuz öğrenci/öğrencileri, yasal staj sürelerine sayılmak üzere iş yerinizde staj yapmasının yararlı olacağı düşünülmektedir. <br>
+                        Bu isteğin değerlendirilerek iş yerinizde bu imkanın sağlanıp sağlanamayacağı, sağlanacak ise ekte verilen zorunlu staj başvuru formunun staj başlangıç tarihinden en az bir (1) ay önce eksiksiz olarak doldurulup, onaylanarak Yüksekokulumuz müdürlüğüne bilgi verilmesini önemle rica eder, ilgi ve yardımlarınıza teşekkür ederim.
+                    </p>
+                </div>
+                <div class="col-6">
+                    <p>Öğrencinin Adı:</p>
+                    <input class="inputText" type="text" maxlength="25" required placeholder="Lütfen Adınızı Girin" id="name">
+                </div>
+                <div class="col-6">
+                    <p>Öğrencinin Soyadı:</p>
+                    <input class="inputText" type="text" maxlength="25" placeholder="Lütfen Soyadınızı Girin" required id="surname">
+                </div>
+                <div class="col-6">
+                    <p>Öğrenci Okul No:</p>
+                    <input class="inputText" type="text" placeholder="Lütfen Öğrenci Numaranızı Girin" required id="studentNumber">
+                </div>
+                <div class="col-6">
+                    <p>Öğrenci Programı:</p>
+                    <select id="program" class="inputText">
+                        <option value="">Bilgisayar Programcılığı</option>
+                        <option value="">Elektrik Programı</option>
+                        <option value="">Gaz ve Tesisat Teknolojisi Programı</option>
+                        <option value="">İklimlendirme ve Soğutma Teknolojisi Programı</option>
+                        <option value="">Elektronik Teknolojisi Programı</option>
+                        <option value="">Mekatronik Programı</option>
+                        <option value="">Süt ve Ürünleri Teknolojisi Programı</option>
+                        <option value="">Gıda Teknolojisi Programı</option>
+                        <option value="">Et ve Ürünleri Teknolojsi Programı</option>
+                        <option value="">Endüstriyel Kalıpçılık Programı</option>
+                        <option value="">Makine Programı</option>
+                        <option value="">Tarım Makineleri Programı</option>
+                        <option value="">Otomotiv Teknolojisi Programı</option>
+                        <option value="">İş Sağlığı ve Güvenliği Programı</option>
+                        <option value="">Süs Bitkileri Yetiştiriciliği Programı</option>
+                        <option value="">Tekstil Programı</option>
+                        <option value="">Grafik Tasarım Programı</option>
+                        <option value="">Moda Tasarımı Programı</option>
+                    </select>
+                </div>
+                 <div class="col-12">
+                    <p>Yazışma Adresi:</p>
+                    <input type="email" required /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ class="inputText" placeholder="google16@gmail.com">
+                </div>
+                <div class="col-12">
+                    <p>Yüksekokul Adresi:</p>
+                    <textarea id="adress" required rows="5" cols="95"></textarea>
+                </div>
+                <br>
+                <div class="col-12" id="manager">
+                    <h3>Müdür</h3>
+                </div>
+
+                <div class="col-3  btnNext">
+                    <button onclick="next()">İLERİ</button>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+    <div class="col-3 ">&nbsp;</div>
+</body>
+
+</html>
